@@ -1,63 +1,92 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>ネクストインパクト</title>
-	<style>
-		/* Styles for the logo */
-		.logo {
-			float: left;
-			margin: 10px;
-			height: 200px;
-		}
+  <head>
+    <title>ネクストインパクト</title>
+    <style>
+      /* Styles for the header */
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 10px 50px;
+      }
 
-		/* Styles for the navigation menu */
-		nav {
-			float: right;
-			margin: 10px;
-			font-size: 18px;
-			padding-top: 10px; /* Add some padding to the top of the nav element */
-		}
+      header .logo {
+        font-size: 36px;
+        font-weight: bold;
+        color: #333;
+        text-decoration: none;
+      }
 
-		nav ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-		}
+      header nav {
+        display: flex;
+        align-items: center;
+      }
 
-		nav li {
-			display: inline-block;
-			margin-right: 20px;
-		}
+      header nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
 
-		nav a {
-			color: #333;
-			text-decoration: none;
-			padding: 5px 10px;
-			border-radius: 5px;
-			transition: background-color 0.3s ease;
-		}
+      header nav li {
+        margin-right: 20px;
+      }
 
-		nav a:hover {
-			background-color: #ddd;
-		}
-	</style>
-</head>
-<body>
-	<!-- Logo -->
-	<img src="logo.jpg" alt="Logo" class="logo">
+      header nav a {
+        font-size: 18px;
+        color: #333;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
 
-	<!-- Navigation Menu -->
-	<nav>
-		<ul>
-			<li><a href="#">ホーム</a></li>
-			<li><a href="#">私たちについて</a></li>
-			<li><a href="#">サービス</a></li>
-			<li><a href="#">会社概要</a></li>
-			<li><a href="#">お問い合わせ</a></li>
-		</ul>
-	</nav>
+      header nav a:hover {
+        background-color: #ddd;
+      }
 
-	<!-- Rest of the website content goes here -->
+      /* Styles for the main content */
+      main {
+        background-color: #f6f6f6;
+        padding: 50px;
+      }
 
-</body>
+      h1 {
+        font-size: 48px;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 24px;
+        color: #666;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="#" class="logo">My Website</a>
+      <nav>
+        <ul>
+          <li><a href="#">ホーム</a></li>
+          <li><a href="#">私たちについて</a></li>
+          <li><a href="#">サービス</a></li>
+          <li><a href="#">会社概要</a></li>
+	  <li><a href="#">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <h1>Welcome to My Website</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod aliquet sapien, eu ullamcorper dolor convallis sed. Fusce ut commodo lectus. Sed consectetur euismod lobortis. Nullam a justo finibus, fermentum quam et, viverra enim. Curabitur ut bibendum magna, ac finibus felis.</p>
+    </main>
+  </body>
 </html>
