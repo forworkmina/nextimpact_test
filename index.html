@@ -89,6 +89,43 @@
         color: #666;
         line-height: 1.5;
       }
+      /* Styles for the photo and arrow */
+      .photo-container {
+        position: absolute;
+        top: -150px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+      }
+
+      .photo-container img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+      }
+
+      .arrow {
+        position: absolute;
+        top: -80px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-bottom: 40px solid #333;
+      }
+
+      .arrow-text {
+        position: absolute;
+        top: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+      }
     </style>
   </head>
   <body>
@@ -113,6 +150,7 @@
     <!-- Main Content -->
     <main>
       <h1>Welcome to My Website</h1>
+
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod aliquet sapien, eu ullamcorper dolor convallis sed. Fusce ut commodo lectus. Sed consectetur euismod lobortis. Nullam a justo finibus, fermentum quam et, viverra enim. Curabitur ut bibendum magna, ac finibus felis.</p>
     </main>
   </body>
