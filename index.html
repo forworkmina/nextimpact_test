@@ -1,80 +1,101 @@
 <!DOCTYPE html>
 <html lang="ja">
-<html>
-  <head>
-  <link rel="stylesheet" href="stylesheet.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	  
-    <title>ネクストインパクト</title>
-    
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <a href="#" class="logo">
-	<p>株式会社<br />
-	   NEXT IMPACT</p>
-        <img src="logo.jpg" alt="Logo">
-      </a>
-      <!-- Top Navigation Menu -->
-<div class="topnav">
-  <a href="#home" class="active">Logo</a>
-  <!-- Navigation links (hidden by default) -->
-  <div id="myLinks">
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-  </div>
-  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-      <!-- <nav> -->
+  <html>
+    <head>
+      <link rel="stylesheet" href="stylesheet.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>ネクストインパクト</title>
+    </head>
+    <body>
+      <!-- Header -->
+      <header>
+        <a href="#" class="logo">
+          <p>株式会社 <br /> NEXT IMPACT </p>
+          <img src="logo.jpg" alt="Logo">
+        </a>
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+          <a href="#home" class="active">Logo</a>
+          <!-- Navigation links (hidden by default) -->
+          <div id="myLinks">
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+          </div>
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <!-- <nav> -->
         <ul>
-          <li><a href="#">ホーム</a></li>
-          <li><a href="#">私たちについて</a></li>
-          <li><a href="#">サービス</a></li>
-          <li><a href="#">会社概要</a></li>
-	  <li><a href="#">お問い合わせ</a></li>
+          <li>
+            <a href="#">ホーム</a>
+          </li>
+          <li>
+            <a href="#">私たちについて</a>
+          </li>
+          <li>
+            <a href="#">サービス</a>
+          </li>
+          <li>
+            <a href="#">会社概要</a>
+          </li>
+          <li>
+            <a href="#">お問い合わせ</a>
+          </li>
         </ul>
-      <!-- </nav> -->
-      <div class="social-media-icons">
-        <a href="#"><i class="fa fa-facebook-f"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-instagram"></i></a>
-      </div>
-      <div class="menu-bar" onclick="toggleMenu()">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-      <div class="image-container">
-        <img src="support1.jpg" alt="Example Image">
-        <div class="overlay">
-          <div class="text">Example Text</div>
-          <div class="arrow">
-	    <img src="arrow.png" alt="Example Image">
+        <!-- </nav> -->
+        <div class="social-media-icons">
+          <a href="#">
+            <i class="fa fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </div>
+        <div class="menu-bar" onclick="toggleMenu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div> /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */ <script>
+          function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+        </script>
+      </header>
+      <!-- Main Content -->
+      <main>
+        <div class="image-container">
+          <img src="support1.jpg" alt="Example Image">
+          <div class="overlay">
+            <div class="text">Example Text</div>
+            <div class="arrow">
+              <img src="arrow.png" alt="Example Image">
+            </div>
           </div>
         </div>
-      </div>
-      <div class="image-container">
-        <img src="support1.jpg" alt="Example Image">
-        <div class="overlay">
-          <div class="text">Example Text</div>
-          <div class="arrow">
-	    <img src="arrow.png" alt="Example Image">
+        <div class="image-container">
+          <img src="support1.jpg" alt="Example Image">
+          <div class="overlay">
+            <div class="text">Example Text</div>
+            <div class="arrow">
+              <img src="arrow.png" alt="Example Image">
+            </div>
           </div>
         </div>
-      </div>
-      <h1>～支援をもっと身近に～</h1>
-      <p>あなたが気になる支援金を探し、申請対象であるか Check</p>
-    </main>
-  </body>
-</html>
+        <h1>～支援をもっと身近に～</h1>
+        <p>あなたが気になる支援金を探し、申請対象であるか Check</p>
+      </main>
+    </body>
+  </html>
