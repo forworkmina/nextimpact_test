@@ -168,6 +168,68 @@
   right: 0;
   top: 0;
 }
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f6f6f6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* Service section styles */
+.services {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.services h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.service-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  flex-basis: calc(33.33% - 40px);
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.service-item img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.service-item h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.service-item p {
+  font-size: 16px;
+  color: #666;
+}
+
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
