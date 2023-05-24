@@ -243,6 +243,7 @@ body {
 }
 
 .image2 {
+  width: 300px;
   position: absolute;
   top: 300px;
   right: 300px;
