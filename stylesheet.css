@@ -226,6 +226,13 @@ body {
   right: 300px;
 }
 
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
   background-color: #ddd;
