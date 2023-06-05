@@ -1,68 +1,109 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-	<link href="stylesheet.css" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"><!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<title>ネクストインパクト</title>
-</head>
-<body>
-	<!-- Header -->
-	<header>
-		<a class="logo" href="#">
-		<p>株式会社<br>
-		NEXT IMPACT</p><img alt="Logo" src="logo.jpg"></a>
-		<div class="social-media-icons">
-			<a href="#"><i class="fa fa-facebook-f"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-instagram"></i></a>
-		</div><!-- Top Navigation Menu -->
-		<div class="topnav">
-			<a class="active" href="#home">メニュー</a> <!-- Navigation links (hidden by default) -->
-			<div id="myLinks">
-				<a href="#news">ホーム</a> <a href="#contact">私たちについて</a> <a href="#about">サービス</a> <a href="#about">会社概要</a> <a href="#about">お問い合わせ</a>
-			</div><!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-			 <a class="icon" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-		</div><!-- <nav> -->
-		<!-- <ul><li><a href="#">ホーム</a></li><li><a href="#">私たちについて</a></li><li><a href="#">サービス</a></li><li><a href="#">会社概要</a></li><li><a href="#">お問い合わせ</a></li></ul> -->
-		<!-- </nav> -->
-		<div class="menu-bar" onclick="toggleMenu()">
-			<div class="line"></div>
-			<div class="line"></div>
-			<div class="line"></div>
-		</div><!-- Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon -->
-		<script>
-		        function myFunction() {
-		          var x = document.getElementById("myLinks");
-		          if (x.style.display === "block") {
-		            x.style.display = "none";
-		          } else {
-		            x.style.display = "block";
-		          }
-		        }
-		</script>
-	</header><!-- Main Content -->
-	<section class="services">
-		<div class="container">
-			<div class="service-items">
-				<div class="service-item">
-					<div class="parent">
-						<img alt="Service 1" class="image1" src="support1.jpg"> <img alt="Arrow" class="image2" src="arrowb.png">
-						<div class="centered">
-							株式会社ネクストインパクト
-						</div>
-					</div>
-					<div class="service-item"><img alt="Service 2" src="support1.jpg"></div>
-					<div class="service-item">
-						<img alt="Service 3" src="support1.jpg">
-						<h3>Service 3</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis neque in dolor congue, eu dapibus ligula hendrerit.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<main>
-		<h1>～支援をもっと身近に～</h1>
-		<p>あなたが気になる支援金を探し、申請対象であるか Check</p>
-	</main>
-</body>
+  <head>
+    <link href="stylesheet.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <title>next solution</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a class="logo" href="#">
+        <p>
+          株式会社<br />
+          NEXT IMPACT
+        </p>
+        <img alt="Logo" src="logo.jpg"
+      /></a>
+      <div class="social-media-icons">
+        <a href="#"><i class="fa fa-facebook-f"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+      </div>
+      <!-- Top Navigation Menu -->
+      <div class="topnav">
+        <a class="active" href="#home">メニュー</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="#news">ホーム</a> <a href="#contact">私たちについて</a>
+          <a href="#about">サービス</a> <a href="#about">会社概要</a>
+          <a href="#about">お問い合わせ</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a class="icon" href="javascript:void(0);" onclick="myFunction()"
+          ><i class="fa fa-bars"></i
+        ></a>
+      </div>
+      <!-- <nav> -->
+      <!-- <ul><li><a href="#">ホーム</a></li><li><a href="#">私たちについて</a></li><li><a href="#">サービス</a></li><li><a href="#">会社概要</a></li><li><a href="#">お問い合わせ</a></li></ul> -->
+      <!-- </nav> -->
+      <div class="menu-bar" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <!-- Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon -->
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      </script>
+    </header>
+    <!-- Main Content -->
+    <section class="services">
+      <div class="container">
+        <div class="service-items">
+          <div class="service-item">
+            <div class="parent">
+              <img
+                alt="Service 1"
+                class="image1"
+                src="https://i.postimg.cc/9FK55KvX/support1.jpg"
+              />
+              <img
+                alt="Arrow"
+                class="image2"
+                src="https://i.postimg.cc/ZKCtQ4sD/arrowb.png"
+              />
+              <div class="centered">株式会社next solution</div>
+            </div>
+            <div class="service-item">
+              <img
+                alt="Service 2"
+                src="https://i.postimg.cc/9FK55KvX/support1.jpg"
+              />
+            </div>
+            <div class="service-item">
+              <img
+                alt="Service 3"
+                src="https://i.postimg.cc/9FK55KvX/support1.jpg"
+              />
+              <h3>Service 3</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                sagittis neque in dolor congue, eu dapibus ligula hendrerit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main>
+      <h1>～支援をもっと身近に～</h1>
+      <p>あなたが気になる支援金を探し、申請対象であるか Check</p>
+    </main>
+  </body>
 </html>
