@@ -133,6 +133,11 @@ p {
 	left: 200;
 	top: 0;
 }
+
+.hamburger{
+  display: flex;
+  left: 100;
+}
 /* Reset default styles */
 
 * {
