@@ -90,6 +90,9 @@ p {
 	font-size: 24px;
 	text-decoration: none;
 }
+.social-media-icons a:hover {
+	color: #04aa6d;
+  }
 .fa {
 	padding: 20px;
 	font-size: 30px;
@@ -100,8 +103,8 @@ p {
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 40px;
-  background-color: pink;
+	padding: 0px;
+  	background-color: pink;
 }
 /* Style the navigation menu */
 
@@ -109,12 +112,12 @@ p {
 	overflow: hidden;
 	background-color: #333;
 	position: relative;
-  margin: 0 auto;
+ 	margin: 0 auto;
 }
 /* Hide the links inside the navigation menu (except for logo/home) */
 
 .topnav #myLinks {
-	display: none;
+   display: none;
   flex-direction: column; /* Add this line to align links vertically */
 
 }
@@ -133,6 +136,7 @@ p {
 
   display: inline-block; /* Change display to inline-block */
   padding: 0px 0px; /* Adjust padding as needed */
+  margin-right: 20px; 
   margin-left: 0px; /* Add left margin to create space between text and hamburger */
 }
 
@@ -148,78 +152,62 @@ p {
 body {
 	font-family: Arial, sans-serif;
 	background-color: #f6f6f6;
+	/* background-image: url('support1.jpg');; */
 }
 /* Service section styles */
 div.container {
   margin: 0 auto;
 }
-.services {
-  margin: 0 auto;
-	background-color: black;
-	padding: 0;
-}
-.services h2 {
-	font-size: 36px;
-	text-align: center;
-	margin-bottom: 40px;
-}
-.service-items {
+
+.contents {
+	width: 100%;
 	display: flex;
 	justify-content: center;
   align-items: center;
 	flex-wrap: wrap;
-  background-color: yellow;
+  background-color: red;
+	opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;	
 }
-.service-item {
-	/*flex-basis: calc(33.33% - 40px);*/
-	background-color: red;
-	border-radius: 8px;
-	padding: 30px;
-	margin: ;
-  position: relative;
-  /*display: flex;*/
-  width: 100%;
-  /*flex-dirextion: column;*/
-  align-items: center;
+
+.first {
+	position: relative;
+	margin-top: 94px;
+	visibility: hidden;
+	animation: fade-in 1s ease-in-out forwards;
 }
 /*each picture*/
-.service-item img {
-	width: 800px;
-	height: 450px;
+img {
+	max-width: 100%;
+	max-height: 100vh; /* Set the image height to fit the viewport height */
+	object-fit: contain; /* Preserve the aspect ratio and fit the image within the container */
 	margin-bottom: 100px;
+    animation: fade-in 1s ease-in-out forwards;
+
 }
-.service-item .arrow-caption {
+.arrow-caption {
   position: absolute;
-  bottom: 120px;
-  left: 30px;
+  bottom: 90px;
+  left: 200px;
   color: #fff;
   font-size: 35px;
   font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
   border-radius: 5px;
   text-align: center;
 }
-.service-item .image-caption {
+.image-caption {
   position: absolute;
-  bottom: 90px;
-  left: 500px;
+  bottom: 50px;
+  left: 950px;
   color: black;
-  font-size: 18px;
+  font-size: 34px;
   font-weight: bold;
   padding: 10px;
   border-radius: 5px;
   text-align: center;
 }
-.service-item h3 {
-	font-size: 24px;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
-.service-item p {
-	font-size: 16px;
-	color: #666;
-}
+
 .parent {
 	position: relative;
 	top: 0;
@@ -231,11 +219,12 @@ div.container {
 	left: 0;
 }
 .image2 {
-	max-width: 60%;
-  height: auto;
+	/*max-width: 10%;*/
+  	height: 120%;
+	width: 900px;
 	position: absolute;
 	top: 150px;
-	right: 330px;
+	right: 600px;
 }
 
 /* Add a grey background color on mouse-over */
@@ -250,3 +239,61 @@ div.container {
 	background-color: #04aa6d;
 	color: white;
 }
+@media screen and (max-width: 600px) {
+	.topnav.responsive #myLinks {
+	  display: flex;
+	  flex-direction: column;
+	}
+  }
+
+  footer {
+	text-align: center;
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+  }
+  footer h1 {
+	font-size: 24px;
+  }
+  footer p {
+	font-size: 16px;
+  }
+
+  @keyframes fade-in {
+	0% {
+	  opacity: 0;
+	  transform: translateY(20px);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+
+  .testing {
+	width: 80.2%;
+	min-height: 686px;
+	max-width: 100%;
+	margin-left: auto;
+	background-size: cover;
+	background-position: top center;
+  }
+  
+  @keyframes fade-in {
+	0% {
+	  opacity: 0;
+	  transform: translateY(20px);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+}
+
+@media screen and (min-width: 0em) and (max-width: 59.3125em) {
+	.contents {
+	  margin-top: 60px;
+	  margin-bottom: 72px;
+	}
+  }
+  
