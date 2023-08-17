@@ -9,7 +9,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: #fff;
+	background-color: #f8e7ab;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	padding: 20px;
   margin: 0 auto;
@@ -91,7 +91,7 @@ p {
 	text-decoration: none;
 }
 .social-media-icons a:hover {
-	color: #04aa6d;
+	color: white;
   }
 .fa {
 	padding: 20px;
@@ -236,9 +236,32 @@ img {
 /* Style the active link (or home/logo) */
 
 .active {
-	background-color: #04aa6d;
+	background-color: black;
 	color: white;
 }
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #9ACD32;
+    color: black; /* Set text color to black */
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer; /* Add cursor style */
+	    font-weight: bold; /* Make the text bold */
+
+  }
+  .yellow-rectangle {
+    background-color: #FFDB58; /* Mustard yellow color */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto; /* Center the rectangle */
+    max-width: 100%; /* Adjust the width as needed */
+    text-align: center;
+  }
+
+  .inner-content {
+    color: white;
+  }
 @media screen and (max-width: 600px) {
 	.topnav.responsive #myLinks {
 	  display: flex;

@@ -1,106 +1,84 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <link href="stylesheet.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <title>NEXT IMPACT</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-    <!-- Header -->
-    <header>
-      <a class="logo" href="index.html">
-        <p>株式会社 <br> NEXT IMPACT </p>
-        <img alt="Logo" src="logo.jpg">
-      </a>
-      <div class="social-media-icons">
-        <a href="#">
-          <i class="fa fa-facebook-f"></i>
-        </a>
-        <a href="#">
-          <i class="fa fa-twitter"></i>
-        </a>
-        <a href="#">
-          <i class="fa fa-instagram"></i>
-        </a>
-      </div>
-      <!-- Top Navigation Menu -->
-      <div class="topnav">
-        <a class="active" href="#home">メニュー</a>
-        <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-          <a href="#news">ホーム</a>
-          <a href="#contact">私たちについて</a>
-          <a href="#about">サービス</a>
-          <a href="#about">会社概要</a>
-          <a href="#about">お問い合わせ</a>
-        </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a class="icon" href="javascript:void(0);" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-      <!-- <nav> -->
-      <!-- <ul><li><a href="#">ホーム</a></li><li><a href="#">私たちについて</a></li><li><a href="#">サービス</a></li><li><a href="#">会社概要</a></li><li><a href="#">お問い合わせ</a></li></ul> -->
-      <!-- </nav> -->
-      <div class="menu-bar" onclick="toggleMenu()">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-      <!-- Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon -->
-      
-      <script>
-        function myFunction() {
-          var x = document.getElementById("myLinks");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-            x.style.flexDirection = "column"; 
-          }
-          
-        }
-      </script>
-    </header>
-    <!-- Main Content -->
-<!-- Main Content -->
+<head>
+  <link href="stylesheet.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>NEXT IMPACT</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 <body>
+  <header>
+    <a class="logo" href="index.html">
+      <p>株式会社 <br> NEXT IMPACT </p>
+      <img alt="Logo" src="logo.jpg">
+    </a>
+    <div class="social-media-icons">
+      <a href="#">
+        <i class="fa fa-facebook-f"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-instagram"></i>
+      </a>
+    </div>
+    <div class="topnav">
+      <!-- <a class="active" href="#home">メニュー</a> -->
+      <div id="myLinks">
+        <a href="#news">ホーム</a>
+        <a href="#contact">私たちについて</a>
+        <a href="#about">サービス</a>
+        <a href="#about">会社概要</a>
+        <a href="#about">お問い合わせ</a>
+      </div>
+      <a class="icon" href="javascript:void(0);" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div class="menu-bar" onclick="toggleMenu()">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+          x.style.flexDirection = "column"; 
+        }
+      }
+    </script>
+  </header>
   <contents>
-    <first>
-      <div class="parent">
-        <!-- <img alt="Service 1" class="image1" src="support1.jpg"> -->
-        <div class="testing" style="background-image: url(https://i.postimg.cc/DzvW0JTP/support1.jpg)";>
-          <img alt="Arrow" class="image2" src="arrowb.png">
-          <div class="arrow-caption">株式会社 <br>ネクストインパクト </div>
-          <div class="image-caption">ー COMMIT TO THE FUTURE ー <br>人々に更なる影響を与え、 <br>未来に Commit する会社である </div>
-        </div>
+    <div class="top-content">
+      <img alt="Top Image" class="top-image" src="Presentation1.jpg">
+      <!-- <div class="top-text">
+        <h1>株式会社ネクストインパクト</h1>
+        <p>人々に更なる影響を与え、未来に Commit する会社である</p>
+      </div> -->
+    </div>
+    <div class="parent">
+      <img alt="Top Image" class="top-image" src="Presentation2.jpg">
+
+      <!-- Your other content goes here -->
+    </div>
+    <!-- Mustard yellow rectangle -->
+    <div class="yellow-rectangle">
+      <div class="inner-content">
+        <h1>～支援をもっと身近に～</h1>
+        <p>あなたが気になる支援金を探し、申請対象であるか</p>
+          <a class="cta-button"href="category.html">Check</a>
       </div>
-    </first>
-    <second>
-      <div class="parent">
-        <img alt="Service 2" class="image1" src="support1.jpg">
-        <img alt="Arrow" class="image2" src="arrowb.png">
-        <div class="arrow-caption">SERVICE</div>
-        <div class="image-caption">ー 自分に当てはまる支援金が分からない ー<br>簡単な質問に答えていただき、自分が申請の <br>対象であるか素早く Check 出来るシステム </div>
-      </div>
-    </second>
-    <third>
-      <div class="parent">
-        <img alt="Service 3" class="image1" src="support1.jpg">
-        <div class="arrow-caption">株式会社 <br>ネクストインパクト </div>
-      </div>
-    </third>
-    <fourth>
-      <h1>～支援をもっと身近に～</h1>
-      <p>あなたが気になる支援金を探し、申請対象であるか <a href="category.html"> Check </a></p>
-    </fourth>
+    </div>
   </contents>
-</body>        
-      
   <footer>
-    
+    <!-- Your footer content goes here -->
   </footer>
+</body>
 </html>
